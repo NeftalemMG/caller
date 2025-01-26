@@ -9,7 +9,7 @@ const JokeButton = () => {
   const fetchJoke = async () => {
     setLoading(true);
     try {
-      const response = await fetch('https://jokerandomizer-pdor40fpi-yoboinef-2000s-projects.vercel.app/api/laughs');
+      const response = await fetch('https://jokerandomizer.vercel.app/api/laughs');
       const data = await response.json();
       setJoke(data.theJoke);
     } catch {
