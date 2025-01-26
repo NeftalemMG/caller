@@ -12,7 +12,7 @@ const JokeButton = () => {
       const response = await fetch('http://127.0.0.1:8000/laughs/');
       const data = await response.json();
       setJoke(data.theJoke);
-    } catch (error) {
+    } catch {
       setJoke('Failed to fetch a joke.');
     } finally {
       setLoading(false);
